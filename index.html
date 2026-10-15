@@ -11,6 +11,138 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <h1> <a href="/"> Ribas inc. </a> </h1>
+
+        <!-- Aria-label (Acessible Rich Internet Aplicattions) é um conjunto de atributos que ajudam na acessibilidade -->
+
+        <nav aria-label="Navegação Principal">
+            <ul>
+                <li> <a href="#sobre"> Sobre</a></li>
+                <li> <a href="#projetos"> Projeto</a></li>
+                <li> <a href="#contato"> Contato </a></li>
+            </ul>
+        </nav>
+    </header>
     
+    <!-- "span" é como separar uma caixinha que você vai estilizar depois -->
+    <main>
+        <section class="hero-section" aria-labelledby="hero-title">
+            <h2> Design <span> Premium, </span> engenharia de ponta. </h2>
+            <p> Dev front-end e UX/UI </p>
+            <p> Designer construindo expêriencias digitais modernas </p>
+
+            <ul>
+                <li> <a href="#projetos"> Ver meu trabalho </a></li>
+                <li> <a href="#contato"> Entrar em contato </a></li>
+            </ul>
+        </section>
+
+        <section class="sobre-section" aria-labelledby="sobre-title">
+            <div class="about-text">
+                <h2> Muito prazer, sou a Cris </h2>
+            <p> Atuo como desenvolvedora criando interfaces robustas e responsivas. Meu foco é unir o melhor design centrado no usuário com o poder das tecnologias web modernas.</p>
+            <p> Além de desenvolvedora, também amo desenhar, assistir, ler, jogar </p>
+            </div>
+
+            <img src="" alt="">
+        </section>
+
+        <section class="projetos-section" aria-labelledby="projetos-title">
+            <h2 id="projetos-title"> Trabalhos relevantes</h2>
+            <p>Essa é uma seleção dos meus melhores projetos, envolvendo front-end e design de interfaces</p>
+
+            <ul>
+                <li>
+                    <article>
+                        <div>
+                            <h3> Projeto PROA </h3>
+                            <p> Projeto voltado a ajudar jovens de baixa renda </p>
+                            <a href=""> saiba mais</a>
+                        </div>
+                    </article>
+                </li>
+
+                 <li>
+                    <article>
+                        <div>
+                            <h3> Projeto PROA </h3>
+                            <p> Projeto voltado a ajudar jovens de baixa renda </p>
+                            <a href=""> saiba mais</a>
+                        </div>
+                    </article>
+
+                </li>
+
+                 <li>
+                    <article>
+                        <div>
+                            <h3> Projeto PROA </h3>
+                            <p> Projeto voltado a ajudar jovens de baixa renda </p>
+                            <a href=""> saiba mais</a>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <section class="contato-section" aria-labelledby="contato-title">
+            <div>
+                <h2 id="contato-title"> Pronto para tirar sua ideia do papel? </h2>
+            <p> Seja para lançar um projeto, renovar sua identidade ou criar uma experiência digital. </p>
+            </div>
+
+            <form>
+                <label for="nome"> Nome</label>
+                <input type="text" id="nome" name="nome" required placeholder="Ex: Mariana Oliveira">
+
+                <label for="email"> Email</label>
+                <input type="text" id="email" name="email" required placeholder="Ex: Mariana.oliveira@gmail.com">
+
+                <label for="telefone"> Telefone</label>
+                <input type="text" id="telefone" name="telefone" required placeholder="Ex: (+55) 11 99999-9999">
+
+                <label for="mensagem"> Mensagem</label>
+                <textarea name="mensagem" id="mensagem" name="mensagem" required placeholder="Ex: Olá, gostaria de falar de uma proposta..." required></textarea>
+
+                <button type="submit"> Entrar em contato! </button>
+            </form> 
+        </section>
+
+        <footer>
+            <p> &copy; 2026 Leila Cristina. Todos os direitos reservados. </p>
+
+            <nav aria-label="Redes sociais">
+                <ul>
+                    <li> 
+                        <a href="https://linkedin.com" target="_blank">
+                         <span> Linkedin </span> 
+                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.75 3H4.25C3.56 3 3 3.56 3 4.25V19.75C3 20.44 3.56 21 4.25 21H19.75C20.44 21 21 20.44 21 19.75V4.25C21 3.56 20.44 3 19.75 3ZM8 18H6.5V10H8V18ZM7.25 8.5C6.7 8.5 6.25 8.05 6.25 7.5C6.25 6.95 6.7 6.5 7.25 6.5C7.8 6.5 8.25 6.95 8.25 7.5C8.25 8.05 7.8 8.5 7.25 8.5ZM17.5 18H16V13C16 11.695 15.06 11.5 14.5 11.5C12.875 11.5 11.5 12.73 11.5 13.5V18H10V10H11.5V11.015C12.33 10.405 13.41 10 14.5 10C16.295 10 17.5 11.205 17.5 13V18Z" fill="#202023"/>
+                        </svg>
+                        </a>
+                    </li>
+
+                    <li> 
+                        <a href="https://github.com" target="_blank"> 
+                        <span> Github </span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 10.9549C21 9.11492 20.615 7.67992 19.83 6.57992C20.23 3.92492 19.49 2.53492 19.405 2.37992L19.14 1.91992L18.62 2.01492C18.53 2.02992 16.48 2.41992 14.695 4.10492C13.8 4.01492 12.875 4.00492 12.005 4.00492C11.135 4.00492 10.21 4.01992 9.31501 4.10492C7.53001 2.41992 5.48001 2.02992 5.39001 2.01492L4.87001 1.91992L4.60501 2.37992C4.51501 2.53492 3.78001 3.92492 4.18001 6.57992C3.39001 7.67992 3.01001 9.11992 3.01001 10.9549C3.01001 15.1949 5.85001 16.6849 8.46001 17.2099C8.18501 17.7199 8.03501 18.2949 8.01501 18.8899C7.79501 19.0449 7.42501 19.2499 7.01001 19.2499C6.39501 19.2499 6.02501 18.8299 5.46501 18.1499C4.86501 17.4149 4.11501 16.4999 2.76001 16.4999H2.01001V17.9999H2.76001C3.37501 17.9999 3.74501 18.4199 4.30501 19.0999C4.90501 19.8349 5.65501 20.7499 7.01001 20.7499C7.38001 20.7499 7.71501 20.6749 8.01001 20.5649V21.9999H16.01V18.9949C16.01 18.3649 15.855 17.7549 15.56 17.2149C18.165 16.6899 21.01 15.1949 21.01 10.9599L21 10.9549Z" fill="#202023"/>
+                        </svg>
+                        </a>
+                    </li>
+
+                    <li> 
+                        <a href="https://instagram.com" target="_blank"> 
+                        <span> Instagram </span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.125 3C18.745 3 20.875 5.13 20.875 7.75V16.25C20.875 18.87 18.745 21 16.125 21H7.875C5.255 21 3.125 18.87 3.125 16.25V7.75C3.125 5.13 5.255 3 7.875 3H16.125ZM12 7.25C9.38 7.25 7.25 9.38 7.25 12C7.25 14.62 9.38 16.75 12 16.75C14.62 16.75 16.75 14.62 16.75 12C16.75 9.38 14.62 7.25 12 7.25ZM12 8.75C13.7949 8.75 15.25 10.2051 15.25 12C15.25 13.7949 13.7949 15.25 12 15.25C10.2051 15.25 8.75 13.7949 8.75 12C8.75 10.2051 10.2051 8.75 12 8.75ZM17.5 5.5C16.95 5.5 16.5 5.95 16.5 6.5C16.5 7.05 16.95 7.5 17.5 7.5C18.05 7.5 18.5 7.05 18.5 6.5C18.5 5.95 18.05 5.5 17.5 5.5Z" fill="#202023"/>
+                        </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+        
+    </main>
 </body>
 </html>
