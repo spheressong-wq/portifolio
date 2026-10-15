@@ -8,7 +8,7 @@
     --bg-secundario: #FBF0FD;
 
     --bg-button-primario: #8B57AF;
-    --bg-button-secundario: #F3E6FC; 
+    --bg-button-secundario: transparent; 
     /* transparente? bg-button-secundario */
 
     --bg-overlay: #38302c;
@@ -23,7 +23,8 @@
     --cor-texto-paragrafo: #8B57AF;
     --cor-texto-titulo: #8B57AF;
 
-    --cor-gradient: linear-gradient(to left;)
+    --cor-gradient: linear-gradient(to left, #8B57AF, #D98ACB);
+    /* Quase esqueci das cores do gradiente. */
 }
 
 /* Limpando estilos padrões do navegador */
@@ -36,12 +37,17 @@
     text-decoration: none;
 }
 
+/* definindo estilos gerais */
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: var(--bg-primario);
     font-family: var(--fonte-primaria);
 }
 
-header, ul{
+header, header ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -54,10 +60,14 @@ header{
     top: 0;
 }
 
+/* Quando mudei o padding pra 5rem, o cabeçalho que acompanha a página ficou grande */
+
 header h1 a{
     color: var(--cor-texto-titulo);
     font-size: 1.5rem;
 }
+
+/* O texto dentro do cabeçalho, não o cabeçalho em si, mudou muito com 5rem. (header h1 a) */
 
 header ul{
     gap: 1rem;
@@ -67,6 +77,51 @@ header ul li a{
     font-size: 1.125rem;
     color: var(--cor-texto-paragrafo);
     font-weight:500;
+}
+
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    height: 88dvh;
+    padding: .5rem;
+}
+
+/* Mudei a altura do hero-section de 100 para 85dhv por enquanto; o espaço em cima do título principal estava me incomodando */
+
+.hero-section h2{
+    font-size:clamp(48px, 5vw, 80px);
+    /* font-size: clamp(valor mínimo, valor preferido, valor máximo); */
+    color: var(--cor-texto-titulo);
+    margin-bottom: 1rem;
+}
+
+.hero-section h2 span{
+    background-image: var(--cor-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.hero-section p{
+    color: var(--cor-texto-paragrafo);
+    line-height: 1.5;
+    font-size: clamp(1.125rem, 3vw, 1.5rem);
+}
+
+.sobre-section h2{
+    color: var(--cor-texto-titulo);
+}
+
+.projetos-section h2{
+    color: var(--cor-texto-titulo);
+}
+
+.contato-section h2{
+    color: var(--cor-texto-titulo);
 }
 
 /* provisório */

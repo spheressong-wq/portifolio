@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <!-- tinha ffaltado um <link rel="stylesheet" href="style.css"> -->
 </head>
 <body>
     <header>
@@ -28,8 +31,8 @@
     
     <!-- "span" é como separar uma caixinha que você vai estilizar depois -->
     <main>
-        <section class="hero-section" aria-labelledby="hero-title">
-            <h2> Design <span> Premium, </span> engenharia de ponta. </h2>
+        <section class="hero-section" aria-labelledby="hero-title" id="hero-title">
+            <h2> Design <span> Premium, </span> <br> engenharia de ponta. </h2>
             <p> Dev front-end e UX/UI </p>
             <p> Designer construindo expêriencias digitais modernas </p>
 
@@ -94,19 +97,19 @@
             </div>
 
             <form>
-                <label for="nome"> Nome</label>
+                <label for="nome"> Nome</label> <br>
                 <input type="text" id="nome" name="nome" required placeholder="Ex: Mariana Oliveira">
 
-                <label for="email"> Email</label>
+                <label for="email"> Email</label> <br>
                 <input type="text" id="email" name="email" required placeholder="Ex: Mariana.oliveira@gmail.com">
 
-                <label for="telefone"> Telefone</label>
+                <label for="telefone"> Telefone</label> <br>
                 <input type="text" id="telefone" name="telefone" required placeholder="Ex: (+55) 11 99999-9999">
 
-                <label for="mensagem"> Mensagem</label>
+                <label for="mensagem"> Mensagem</label> <br>
                 <textarea name="mensagem" id="mensagem" name="mensagem" required placeholder="Ex: Olá, gostaria de falar de uma proposta..." required></textarea>
 
-                <button type="submit"> Entrar em contato! </button>
+                <button type="submit"> Entrar em contato! </button> <br>
             </form> 
         </section>
 
